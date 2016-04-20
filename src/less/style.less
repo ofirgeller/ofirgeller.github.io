@@ -1,0 +1,144 @@
+
+@darkText:           #006974;
+@darkPrimaryColor :  #0097a7;
+@primaryColor:       #00BCD4;
+@lightPrimaryColor:  #B2EBF2;
+@background:         #ECEFF1;
+@white:              #FFFFFF;
+@accentColor:        #FF5722;
+@primaryTextColor:   #212121;
+@secondaryTextColor: #727272;
+@dividerColor:       #B6B6B6;
+  
+  
+  body{
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  *{
+      box-sizing: border-box;
+  }
+  
+.bg{
+    background-color:@background;
+    display: flex;
+    justify-content: center;
+}
+ 
+ 
+.container{
+   
+    margin:20px 0;
+    
+    background-color:@white;
+    border-radius: 2px;
+    width: 1000px;
+    height: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    // display: inline-flex;
+    text-align: center;
+     
+    .header{
+     box-shadow: 0 1px 1px rgba(0,0,0,0.19), 0 1px 1px rgba(0,0,0,0.23);
+     background-color: @darkPrimaryColor; 
+     margin-top:0;
+    }
+} 
+  
+.section{ 
+    display: inline-block;
+    width: 290px;
+    min-height: 300px;
+    
+    &.section-close{
+     margin:0; 
+    }
+
+}
+
+.separator{
+    margin: 10px 10px;
+    width:100%;
+    border-bottom: 1px #B6B6B6 solid;
+    
+}
+
+.sections{    
+    flex-wrap: wrap;  
+    justify-content: space-around;
+    display: flex;
+}
+
+.skills{
+    
+    list-style: none;
+}
+
+.exp{
+    
+    margin-bottom: 15px; 
+    .position{
+        font-weight: bold; 
+        font-size: 1.2em;
+    }
+    
+    .company{
+       color:@darkText;
+       font-size: 1.2em;       
+       font-weight: bold; 
+       
+    }    
+}
+
+.img-me{
+    border-radius: 5%;
+}
+
+.tal{
+ text-align: left;   
+}
+
+// text align center
+.tac{
+ text-align: center;   
+}
+
+//vertical align middle
+.vam{
+    vertical-align: middle;
+    float: left;
+}
+
+.next-to-icon-48{
+    vertical-align: middle;
+    
+    line-height: 48px;
+}
+
+.location{
+    // position: reletive;
+    transition: 0.3s;
+    &:hover{
+     box-shadow: 0 1px 1px rgba(0,0,0,0.19), 0 1px 1px rgba(0,0,0,0.23);
+        // background-color: red;
+      transform: translateY(-10px);
+    }
+}
+
+.map{
+    z-index: 2;
+    background-color: rgba(	26, 26, 26,0.9);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    top:0;
+    right:0;
+    bottom: 0;
+    left:0;
+}
+
+.clickable{
+    cursor: pointer;
+}
