@@ -151,13 +151,7 @@ gulp.task('build:static', ['clean:dist'], function() {
 gulp.task('lint:scripts', function () {
     return gulp.src(paths.scripts.input)
         .pipe(plumber())
-        .pipe(tslint({
-            configuration: {
-              rules: {
-                "class-name": true,
-              }
-            }
-        }))
+        .pipe(tslint())
         .pipe(tslint.report("verbose"));
 });
 

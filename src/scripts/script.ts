@@ -1,7 +1,7 @@
 
 
 
-var query = <(string) => Element>document.querySelector.bind(document);
+var query = < (selector: string) => Element>document.querySelector.bind(document);
 var mapElm = query('.map');
 var locationElm = query('.js-location');
 
